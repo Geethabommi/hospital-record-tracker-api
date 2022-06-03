@@ -4,9 +4,9 @@ This contains the list of API's for managing hospital such as creating doctors a
 
 # Tools,stacks and library used:
 
-1.Nodejs and Expressjs is used to develop this authentication web app.
-2.passport library is used for JWT web token authentication.
-3.mongodb and mongoose for data storage.
+1. Nodejs and Expressjs is used to develop this authentication web app
+2. passport library is used for JWT web token authentication
+3. mongodb and mongoose for data storage
 
 # Deployment:
 
