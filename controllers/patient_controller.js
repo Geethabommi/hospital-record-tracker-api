@@ -103,6 +103,7 @@ module.exports.allReport = async (req, res) => {
       populate: {
         path: 'createdBy',
         model: 'doctor',
+        options: { sort: '-createdAt' },
       },
     });
 
@@ -118,6 +119,7 @@ module.exports.allReport = async (req, res) => {
         date: report.date,
         referedBy: report.referedBy,
         status: report.status,
+        createdAt: report.createdAt,
       };
       finalReports.push(newreport);
     }

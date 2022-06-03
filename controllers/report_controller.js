@@ -1,5 +1,6 @@
 const Report = require('../models/report');
 const { STATUS } = require('../constants');
+const { report } = require('../routes');
 
 module.exports.getAllReportWithStatus = async (req, res) => {
   try {
@@ -22,6 +23,7 @@ module.exports.getAllReportWithStatus = async (req, res) => {
         date: report.date,
         referedBy: report.referedBy,
         status: report.status,
+        createdAt: report.createdAt,
       };
       finalReports.push(newreport);
     }
