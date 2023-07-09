@@ -7,7 +7,8 @@ const passportJWT = require('./config/passport-jwt-strategy');
 const mongoose = require('./config/mongoose');
 const env = require('./config/environment');
 
-app.use(express.urlencoded());
+// app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 app.use(passport.initialize());
 app.use('/', routes);
 
